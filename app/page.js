@@ -10,6 +10,7 @@ export default function Home() {
       <h2> CPRG 306: Web Development 2 - Assignments</h2>
     <ul>
       <li><Link href="./week-2/" className={linkStyles}>Week 2 Assignment</Link></li>
+      <li><Link href="./week-3/" className={linkStyles}>Week 3 Assignment</Link></li>
     </ul>
     </main>
   );
