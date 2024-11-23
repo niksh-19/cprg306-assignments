@@ -34,7 +34,7 @@ export default function SignInPage() {
             <img src={user.photoURL} alt="User profile" className="w-20 h-20 rounded-full mx-auto" />
           </div>
           <div className="mb-4">
-            <Link href="/week-9/shopping-list" className="text-lg hover:underline">
+            <Link href="/week-10/shopping-list" className="text-lg hover:underline">
               Continue to your Shopping List
             </Link>
           </div>

@@ -33,7 +33,7 @@ export default function Page(){
         if (user) {
             try {
                 const addedItemId = await addItem(user.uid, newItem);
-                setitems(prevItems => [
+                setitems( (prevItems) => [
                     ...prevItems, 
                     {
                         id: addedItemId,
@@ -58,7 +58,7 @@ export default function Page(){
         return (
           <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
             <p>You must be logged in to view this page.</p>
-            <Link href="/week-9">Click here to return to the sign in page</Link>
+            <Link href="/week-10">Click here to return to the sign in page</Link>
           </div>
         );
       }
