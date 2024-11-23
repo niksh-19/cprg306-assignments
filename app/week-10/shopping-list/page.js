@@ -32,8 +32,13 @@ export default function Page(){
     async function handleAddItem(newItem) {
         if (user) {
             try {
-                const addedItem = await addItem(user.uid, newItem);
-                setitems(prevItems => [...prevItems, {...addedItem, id: addedItem.id}]);
+                const addedItemId = await addItem(user.uid, newItem);
+                setitems(prevItems => [
+                    ...prevItems, 
+                    {
+                        id: addedItemId,
+                        ...newItem
+                    }]);
             } catch (error) {
                 console.error("Error adding item:", error);
             }
